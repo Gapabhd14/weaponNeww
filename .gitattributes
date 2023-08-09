@@ -1,5 +1,0 @@
-*.safety filter=lfs diff=lfs merge=lfs -text
-*.safety.mp4 filter=lfs diff=lfs merge=lfs -text
-*.N1 filter=lfs diff=lfs merge=lfs -text
-*.N2 filter=lfs diff=lfs merge=lfs -text
-assets/videos/safety.mp4 filter=lfs diff=lfs merge=lfs -text
