@@ -318,7 +318,7 @@ const openVideo = (indexVideo) => {
                 document.getElementById("play").style.visibility = "visible";
                 document.getElementById("playBtn").style.visibility = "visible";
                 document.getElementById("videoFlex").innerHTML += `<video width="320" height="240" controls id="videoExplain" class="videoBlack">
-                    <source id="srcVideo" src="assets/videos/negev/C${x}.MP4" type="video/mp4">
+                    <source id="srcVideo" src="assets/videos/negev/N${x}.MP4" type="video/mp4">
                     Your browser does not support the video tag.
                     </video>`;
             }
@@ -331,7 +331,7 @@ const openVideo = (indexVideo) => {
                 document.getElementById("play").style.visibility = "visible";
                 document.getElementById("playBtn").style.visibility = "visible";
                 document.getElementById("videoFlex").innerHTML += `<video width="320" height="240" controls id="videoExplain" class="videoBlack">
-                    <source id="srcVideo" src="assets/videos/Mag/C${y}.MP4" type="video/mp4">
+                    <source id="srcVideo" src="assets/videos/Mag/M${y}.MP4" type="video/mp4">
                     Your browser does not support the video tag.
                     </video>`;
             }
