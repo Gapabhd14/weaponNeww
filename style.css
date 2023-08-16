@@ -524,6 +524,7 @@ span {
 
 #alertVideo {
     visibility: hidden;
+    z-index: 1;
 }
 .alertVideo {
     position: absolute;
@@ -547,20 +548,22 @@ span {
 .videoBlack {
     top: 20vh;
     right: 10vw;
-    width: 80vw !important;
-    height: 16vh !important;
+    width: 80vw;
+    /* height: 16vh; */
     z-index: 50;
 }
 
 .videoFlex {
-    display: flex;
     position: absolute;
     flex-wrap: wrap;
-    top: 1vh;
+    top: 2vh;
     width: 90vw;
-    height: 86vh;
-    top: 5vh;
+    padding: 0vh 5vw;
     right: 5vw;
     justify-content: center;
     align-items: center;
+    z-index: 90;
+    overflow: auto;
+    height: 83vh;
+    top: 9vh
 }

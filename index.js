@@ -298,7 +298,7 @@ const openVideo = (indexVideo) => {
         document.getElementById("playBtn").style.visibility = "visible";
         if (indexVideo === 0) {
             for (let i = 1; i <= 4; i++) {
-                document.getElementById("videoFlex").innerHTML += `<video width="320" height="240" controls id="videoExplain" class="videoBlack">
+                document.getElementById("videoFlex").innerHTML += `<video preload="auto" width="427" height="240" controls id="videoExplain${i}" class="videoBlack">
                     <source id="srcVideo" src="assets/videos/daily${i}.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                     </video>`;
@@ -309,14 +309,14 @@ const openVideo = (indexVideo) => {
             if (enterCommander) {
                 console.log("commander");
                 enterCommander = false;
-                document.getElementById("videoFlex").innerHTML += `<video width="320" height="240" controls id="videoExplain" class="videoBlack">
+                document.getElementById("videoFlex").innerHTML += `<video preload="auto" width="427" height="240" controls id="videoExplain" class="videoBlack">
                     <source id="srcVideo" src="assets/videos/commander.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                     </video>`;
             } else {
                 console.log("weekly");
                 for (let i = 1; i <= 4; i++) {
-                    document.getElementById("videoFlex").innerHTML += `<video width="320" height="240" controls id="videoExplain" class="videoBlack">
+                    document.getElementById("videoFlex").innerHTML += `<video preload="auto" width="427" height="240" controls id="videoExplain" class="videoBlack">
                         <source id="srcVideo" src="assets/videos/weekly${i}.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                         </video>`;
@@ -331,7 +331,7 @@ const openVideo = (indexVideo) => {
                 document.getElementById("exBut").style.visibility = "visible";
                 document.getElementById("play").style.visibility = "visible";
                 document.getElementById("playBtn").style.visibility = "visible";
-                document.getElementById("videoFlex").innerHTML += `<video width="320" height="240" controls id="videoExplain" class="videoBlack">
+                document.getElementById("videoFlex").innerHTML += `<video preload="auto" width="427" height="240" controls id="videoExplain" class="videoBlack">
                     <source id="srcVideo" src="assets/videos/negev/N${x}.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                     </video>`;
@@ -344,7 +344,7 @@ const openVideo = (indexVideo) => {
                 document.getElementById("exBut").style.visibility = "visible";
                 document.getElementById("play").style.visibility = "visible";
                 document.getElementById("playBtn").style.visibility = "visible";
-                document.getElementById("videoFlex").innerHTML += `<video width="320" height="240" controls id="videoExplain" class="videoBlack">
+                document.getElementById("videoFlex").innerHTML += `<video preload="auto" width="427" height="240" controls id="videoExplain" class="videoBlack">
                     <source id="srcVideo" src="assets/videos/Mag/M${y}.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                     </video>`;
