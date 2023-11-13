@@ -187,7 +187,7 @@ const start = (event) => {
     document.getElementById("ultraBack").removeEventListener("click", start);
     document.getElementById("ultraBack").removeEventListener("click", procedure);
     document.getElementById("ultraBack").addEventListener("click", start2);
-    
+
 }
 
 // treatment page
@@ -200,7 +200,7 @@ const tretmentPage = (event) => {
 
     document.getElementById("titlePuma").innerText = "שלבי טיפול";
     document.getElementById("titlePumaLittle").style.display = "block";
-  
+
 
     // ultra back
     document.getElementById("ultraBack").removeEventListener("click", start2);
@@ -272,13 +272,13 @@ const tretmentPage = (event) => {
                             document.getElementById("treatmentpageEx").innerHTML = arrExecutaionLong[0];
                             document.getElementById("next").style.visibility = "visible";
                             document.getElementById("back").style.right = "15vw";
-                           
+
                         } else { // to page 3
                             isExecutaionLong = false;
                             document.getElementById("treatmentpageEx").innerHTML = arrExecutaionLong[1];
                             document.getElementById("next").style.visibility = "hidden";
                             document.getElementById("exBut").style.visibility = "visible";
-                          
+
                         }
                         document.getElementById("back").style.visibility = "visible";
                         // saveJ = j;
@@ -323,10 +323,12 @@ const openVideo = (indexVideo) => {
         document.getElementById("playBtn").style.visibility = "visible";
         if (indexVideo === 0) {
             for (let i = 1; i <= 4; i++) {
+
                 document.getElementById("videoFlex").innerHTML += `<video preload="auto" width="427" height="240" controls id="videoExplain${i}" class="videoBlack">
-                    <source id="srcVideo" src="assets/videos/daily${i}.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video>`;
+                <source id="srcVideo" src="assets/videos/daily${i}.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>`;
+
             }
         }
         else if (indexVideo === 1) {
@@ -335,7 +337,7 @@ const openVideo = (indexVideo) => {
                 console.log("commander");
                 enterCommander = false;
                 document.getElementById("videoFlex").innerHTML += `<video preload="auto" width="427" height="240" controls id="videoExplain" class="videoBlack">
-                    <source id="srcVideo" src="assets/videos/commander.mp4" type="video/mp4">
+                    <source id="srcVideo" src="assets/commander.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                     </video>`;
             } else {
@@ -357,12 +359,12 @@ const openVideo = (indexVideo) => {
                 document.getElementById("play").style.visibility = "visible";
                 document.getElementById("playBtn").style.visibility = "visible";
                 document.getElementById("videoFlex").innerHTML += `<video preload="auto" width="427" height="240" controls id="videoExplain" class="videoBlack">
-                    <source id="srcVideo" src="assets/videos/negev/N${x}.mp4" type="video/mp4">
+                    <source id="srcVideo" src="assets/negev/N${x}.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                     </video>`;
             }
         }
-    } else if (ultraChosen === "Mag"){
+    } else if (ultraChosen === "Mag") {
         console.log("sheer");
         for (let y = magVideoLength[indexVideo].startVideoNum; y < magVideoLength[indexVideo].startVideoNum + magVideoLength[indexVideo].manyVideos; y++) {
             if (magVideoLength[indexVideo].manyVideos !== 0) {
@@ -370,7 +372,7 @@ const openVideo = (indexVideo) => {
                 document.getElementById("play").style.visibility = "visible";
                 document.getElementById("playBtn").style.visibility = "visible";
                 document.getElementById("videoFlex").innerHTML += `<video preload="auto" width="427" height="240" controls id="videoExplain" class="videoBlack">
-                    <source id="srcVideo" src="assets/videos/Mag/M${y}.mp4" type="video/mp4">
+                    <source id="srcVideo" src="assets/Mag/M${y}.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                     </video>`;
             }
